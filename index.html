@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music Player</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Music Player</h1>
+
+<input type="text" id="searchInput" placeholder="Search songs..." onkeyup="search()">
+<div id="playlist" onclick="playSong(event)"></div> <!-- Add onclick event handler -->
+<div id="controls">
+    <button onclick="play()">Play</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="skip()">Skip</button>
+    <button onclick="shuffle()">Shuffle</button>
+</div>
+
+<div>
+    <label for="fileInput">Add Songs:</label>
+    <input type="file" id="fileInput" accept="audio/*" multiple>
+    <button onclick="addSongs()">Add Songs</button>
+</div>
+
+<h2 style="text-align: left;">Logic Explanation:</h2>
+
+<ul style="text-align: left;">
+  <li>
+      <h1>For Loop</h1>
+      <h2>click links </h2>
+<ul>
+     <p> <a href="https://debbatisudheer.github.io/break_statement/">break statement</a> </p>
+     <p> <a href="https://debbatisudheer.github.io/continue_statement/">continues statement</a> </p>
+     <p> <a href="https://debbatisudheer.github.io/pass_statement/">Pass statement</a></p>
+     <p> <a href="https://debbatisudheer.github.io/iterating_over_list/">Iterating over list</a></p>
+
+</ul>
+      <h1>Displaying Playlist:</h1>
+    <ul>
+      <li>A for loop is used to iterate over the list of songs in the playlist.</li>
+      <li>Each song is displayed in the user interface, typically with its title and any relevant information.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Playing Songs:</strong>
+    <ul>
+      <li>Another for loop is used to sequentially play each song in the playlist.</li>
+      <li>Playback controls are implemented within the loop to pause, skip, or stop playback based on user input.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Playlist Management:</strong>
+    <ul>
+      <li>For loops may be used to perform operations like shuffling the playlist or removing songs.</li>
+      <li>These loops iterate over the playlist, allowing manipulation of its contents.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>User Interaction:</strong>
+    <ul>
+      <li>For loops handle user interactions such as selecting songs, searching for specific songs, or navigating through the playlist.</li>
+      <li>Playback controls and other actions are triggered within the loop based on user input.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Error Handling:</strong>
+    <ul>
+      <li>In case of errors or unexpected conditions, for loops may be used to gracefully handle exceptions or interruptions during playback.</li>
+    </ul>
+  </li>
+</ul>
+<h2 style="text-align: left;">Usage of Break and Continue Statements in a Music Player Application:</h2>
+
+<ul style="text-align: left;">
+  <li>
+    <strong>Playback Control:</strong>
+    <ul>
+      <li><strong>Break:</strong> When the user pauses playback, the music player may use break to exit the loop responsible for playing the current song, effectively pausing playback.</li>
+      <li><strong>Continue:</strong> If the user skips a song, the music player can use continue to skip the rest of the current iteration and proceed to the next song in the playlist.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Playlist Management:</strong>
+    <ul>
+      <li><strong>Break:</strong> When the end of the playlist is reached, the music player might use break to exit the loop responsible for playing songs, effectively stopping playback.</li>
+      <li><strong>Continue:</strong> If the music player encounters a song that is unavailable or cannot be played, it can use continue to skip to the next available song in the playlist.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>User Interaction:</strong>
+    <ul>
+      <li><strong>Break:</strong> If the user decides to exit the music player application while a playlist is playing, break can be used to exit the loop responsible for managing playback.</li>
+      <li><strong>Continue:</strong> When the user performs actions like shuffling the playlist or searching for specific songs, continue can be used to skip certain iterations and proceed with the next action.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Error Handling:</strong>
+    <ul>
+      <li><strong>Break:</strong> In case of unexpected errors or interruptions during playback, the music player might use break to exit the loop and handle the error condition.</li>
+      <li><strong>Continue:</strong> If the music player encounters an error while playing a particular song, it can use continue to skip the current iteration and proceed with the next song.</li>
+    </ul>
+  </li>
+</ul>
+<footer>
+    <p>&copy; 2024 @sudheer debbati. All rights reserved.</p>
+  </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
